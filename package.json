@@ -1,0 +1,37 @@
+{
+  "name": "mini-proj-template",
+  "version": "1.0.0",
+  "repository": "git@github-personal:ty-nat/mini-proj-template",
+  "author": "ty-nat <“ty-nat@users.noreply.github.com”>",
+  "license": "MIT",
+  "source": "src/foo.ts",
+  "main": "dist/foo.js",
+  "module": "dist/foo.module.js",
+  "unpkg": "dist/foo.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "lint": "eslint --ignore-path .gitignore --ext .js.jsx,.ts,.tsx ./src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint --fix"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.9",
+    "microbundle": "^0.12.0",
+    "prettier": "^2.0.5"
+  }
+}
