@@ -1,8 +1,8 @@
 # project-template ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
-基於 `microbundle` 的簡單專案模板。
+基於 `esbuild-node-tsc` 的簡單專案模板。
 
-🎉 microbundle
+🎉 esbuild-node-tsc
 
 🎉 typescript
 
